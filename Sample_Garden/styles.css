@@ -1,10 +1,101 @@
-.navbar{
-    background-color: #ffff70;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.navbuttons {
+    display: flex;
+    gap: 10px; /* Add spacing between buttons */
+    margin-left: auto; /* Push the navbuttons to the right */
+}
+
+.navbuttons button {
+    background-color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbuttons button a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.navbuttons button:hover {
+    background-color: #04AA6D; /* Green background on hover */
+}
+
+.navbuttons button a:hover {
+    color: white; /* White text on hover */
+}
+
+
+/* .navbar{
+    background-color: rgba(0, 0, 0, 0.500);
     height: 100px;
     width: 100%;
     display: flex;
-    justify-content: space-between;    /* this is main */
+    justify-content: space-between;  
+    margin-top: 0px;
+
+} */
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.500);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center; /* Vertically center items */
+    padding: 0 20px; /* Add some padding */
 }
+
+.logoA {
+    display: flex;
+    align-items: center; /* Vertically center the logo and logoname */
+}
+
+.logoname {
+    margin-left: 10px; /* Add spacing between the logo and the text */
+    font-size: 30px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 5px #ffff70;
+}
+/* .logoname{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 5px #ffff70;
+} */
+.hero-section{
+    position: relative;
+    background-image: url(backgroundmain.jpg);
+    opacity: 0.7;
+    background-size: cover;
+    height: 750px;
+    background-position: center;
+    /* background-attachment: fixed; */
+    color: black;
+    text-align: center;
+   
+  }
+
+
+
+  
+.backgroundmain{
+    height:auto;
+    width:100%;}
 search{
     /* float: left; */
     margin-top: auto;
@@ -12,15 +103,7 @@ search{
     float: left;
     margin-right: 60%;
     display: block;
-}
-.navbuttons{
-    float: right;
-    font-style: none;
-    margin-top:auto ;
-    margin-bottom: auto;
-    /* color: white; */
-    margin-right: 20px;
-    /* padding: auto; */
+
 }
 .cards{
     width: 100%;
@@ -31,7 +114,7 @@ search{
     margin: 30px 0px;
     padding: 10px 0px 10px 0px;
     text-align: center;
-    background-color: rgb(253, 254, 229);
+    background-color: rgba(253, 254, 229, 0.500);
 }
 .cards2{
     width: 100%;
@@ -41,22 +124,21 @@ search{
     margin: 30px 0px;
     padding: 10px 0px 10px 0px;
     text-align: center;
-    background-color: rgb(253, 254, 229);
+    background-color: rgba(253, 254, 229, 0.500);
 }
 
 img{
     border-radius: 6px;
-    /* text-decoration-line: underline; */
+    text-decoration-line: underline;
     /* border:1PX  solid #04AA6D; */
 }
 button{
-    /* margin-top: 10px; */
     padding: 8px 8px 8px 8px;
     text-align:center;
     font-size: 16px;
-    background-color: #ffff70; /*same as top nav*/
+    background-color: #fefefd; 
     border-radius: 4px;
-    border: 1px solid #04AA6D;/* Green */
+    border: 1px solid #04AA6D;
     color: darkgreen;
     transition-duration: 0.4s;
 }
@@ -85,12 +167,35 @@ button:hover {
 h2{
     text-shadow: 2px 2px 5px #ffff70;
 }
-footer {
-    background-color: #ccd0b9;
-
-    padding: 10px;
+footer{
+    .footerdiv1{display: block;}
+    a{color: white;}
+    /* justify-content: space-between; */
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.700);
+    /* margin-top: auto; */
+    /* margin-bottom: auto; */
+    /* padding: 10px; */
     text-align: center;
     color: white;
     height: 250px;
     width: 100%;
   }
+/* .banner{opacity: 0.5;margin-top: 10px;width:100%; height:750px;} */
+.logoA{
+    width: 100px;
+    height: 100px;
+    margin-left: 15px;
+}
+body{
+    background-image: url(backgroundimg1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+
+
